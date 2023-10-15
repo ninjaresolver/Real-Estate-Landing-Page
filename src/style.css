@@ -1,0 +1,44 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Your custom styles */
+body {
+    background: #040656;
+}
+.font-monoton {
+    font-family: 'Monoton', cursive;
+}
+.bg-custom-gradient {
+    background: linear-gradient(to bottom, #660194, #4447ea0e);
+}
+.bg-custom-gradient-footer {
+    background: linear-gradient(to top, #5c0286, #4447ea0e);
+}
+.hover-customer-discover:hover .line-dicover-btn{
+    background-color: black;
+}
+
+
+.hover-customer-discover:hover img{
+    color: black;
+}
+
+.animate-slide-up {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.animate-slide-up.transition-transform {
+    transition-property: transform, opacity;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s; /* Adjust the duration as needed */
+}
+
+.animate-show{
+    opacity: 1;
+}
+.animate-show.transition-transform {
+    transition-property: transform, opacity;
+    transition-duration: 0.5s; /* Adjust the duration as needed */
+}
