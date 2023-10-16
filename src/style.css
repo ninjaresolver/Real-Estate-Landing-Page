@@ -2,3 +2,13 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+.animate-slide-up {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.animate-slide-up.transition-transform {
+    transition-property: transform, opacity;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s; /* Adjust the duration as needed */
+}

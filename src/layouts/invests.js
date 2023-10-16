@@ -1,12 +1,34 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { Carousel } from "@material-tailwind/react";
-import { setActive } from "@material-tailwind/react/components/Tabs/TabsContext";
 
 const Invest = () => {
+    const callback = (entries) => {
+        entries.forEach((entry) => {
+          console.log(entry)
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-slide-up');
+          } else {
+            entry.target.classList.remove('animate-slide-up');
+          }
+        });
+      };
     
+      useEffect(() => {
+        const observer = new IntersectionObserver(callback);
+        const targets = document.querySelectorAll('.invest');
+    
+        targets.forEach((target) => {
+          target.classList.add('opacity-0');
+          observer.observe(target);
+        });
+    
+        return () => {
+          observer.disconnect();
+        };
+      }, []);
     return <div className="relative py-32">
-        <div className="px-4 xl:px-32 lg:px-32 md:px-24">
+        <div className="px-4 xl:px-32 lg:px-32 md:px-24 invest translate-y-20 transition-transform transform ">
             <div className="flex justify-between items-center">
                 <h1 className="text-2xl xl:text-4xl lg:text-4xl md:text-4xl font-bold">Investments By Fraction</h1>
             </div>
