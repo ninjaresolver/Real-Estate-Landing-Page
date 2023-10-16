@@ -5,15 +5,45 @@ const Footer = () => {
     return <div className="relative pt-16 overflow-clip">
         <img src="/assets/effects/ef_9.png" className="absolute left-0 w-full rotate-180 bottom-0 -z-10"/>
 
-        <div className="flex flex-col xl:flex-row lg:flex-row">
-            <div className="w-full xl:w-1/3 lg:w-1/3 flex justify-center items-center py-10">
-                <img src="/assets/images/passive.png" className="w-[60px] h-[60px]"/>
+        <div className="flex flex-col xl:flex-row lg:flex-row px-4 xl:px-32 lg:px-32 md:px-16">
+            <div className="w-full xl:w-1/3 lg:w-1/3 flex flex-col justify-start items-center py-10">
+                <div className="w-[90px] h-[90px] bg-indigo-800 bg-opacity-10 border-2 border-indigo-800 rounded-md p-4 flex justify-center items-center">
+                    <img src="/assets/images/passive.png"/>
+                </div>
+                <div className="mt-4">
+                    <h4 className="font-bold text-xl text-center">
+                        Passive Income
+                    </h4>
+                    <div className="text-center mt-4">
+                        Earn rental income and receive quarterly deposits
+                    </div>
+                </div>
             </div>
-            <div className="w-full xl:w-1/3 lg:w-1/3 flex justify-center items-center py-10">
-                <img src="/assets/images/transparency.png" className="w-[60px] h-[60px]"/>
+            <div className="w-full xl:w-1/3 lg:w-1/3 flex flex-col justify-start items-center py-10">
+                <div className="w-[90px] h-[90px] bg-indigo-800 bg-opacity-10 border-2 border-indigo-800 rounded-md p-4 flex justify-center items-center">
+                    <img src="/assets/images/transparency.png"/>
+                </div>
+                <div className="mt-4">
+                    <h4 className="font-bold text-xl text-center">
+                        Transparency in processes
+                    </h4>
+                    <div className="text-center mt-4">
+                        We use blockchain and a dapp of governance to inspect each Process and authorize disbursements by stages of constructionWe use blockchain and a dapp of governance to inspect each Process and authorize disbursements by stages of construction
+                    </div>
+                </div>
             </div>
-            <div className="w-full xl:w-1/3 lg:w-1/3 flex justify-center items-center py-10">
-                <img src="/assets/images/multi-signature.png" className="w-[60px] h-[60px]"/>
+            <div className="w-full xl:w-1/3 lg:w-1/3 flex flex-col justify-start items-center py-10">
+                <div className="w-[90px] h-[90px] bg-indigo-800 bg-opacity-10 border-2 border-indigo-800 rounded-md p-4 flex justify-center items-center">
+                    <img src="/assets/images/multi-signature.png"/>
+                </div>
+                <div className="mt-4">
+                    <h4 className="font-bold text-xl text-center">
+                        Multi-signature security (22-41)
+                    </h4>
+                    <div className="text-center mt-4">
+                        Digital security is legal Compatible and tangible for investors Qualified
+                    </div>
+                </div>
             </div>
         </div>
 
