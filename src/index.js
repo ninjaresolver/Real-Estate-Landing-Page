@@ -5,9 +5,11 @@ import './index.css';
 import 'tailwindcss/tailwind.css';
 import './style.css';
 import App from './App';
+import './helper/i18n'
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from "@material-tailwind/react";
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
     <ThemeProvider>
